@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device in" >
+        <title>mset</title>
+        <link rel="stylesheet" href="./mset.css">
+        <style type="text/css">
+        *{
+        box-sizing:border-box;
+        }
+        
+        body{
+        margin:0;
+        padding:0;
+        font-family:Arial,Helvetica,sans-serif;
+        }
+        
+        header {
+        width:100%;
+        background:linear-gradient(rgba(6,72,105,0.849),rgb(3,96,133));
+        padding:20px;
+        position:absolute;
+        top:0;
+        }
+        header .container {
+         display:flex;
+         justify-content:space-between;
+        }
+        header a{
+         text-decoration:none;
+         margin-right:100px;
+         font-size:14px;
+         letter-spacing:1px;
+         color:#fff;
+         font-family:Tahoma,Arial,sans-serif;
+        }
+        .banner-container{
+         margin-top:100px;
+         width:100%;
+         height:100vh;
+         background:linear-gradient(rgba(6,72,105,0.849),rgb(3,96,133)),url("11.ipg");
+         background-repeat:no-repeat;
+         background-attachment:fixed;
+         background-position:center;
+         display:flex;
+         align-items:center;
+        }
+        .banner-container .container {
+         display:flex;
+         justify-content:space-around;
+         align-items:center;
+         width:100%;
+        }
+        .left-section {
+         width:600px;
+         align-self:flex-start;
+        }
+        .left-section h1{
+         margin:0;
+         font-size:40px;
+         color:white;
+        }
+        .left-section h1 span{
+         color:yellow;
+        }
+        .left-section p{
+         margin:0;
+         font-size:14px;
+         letter-spacing:1px;
+         color:white;
+         margin-top:18px;
+         line-height:20px;
+        }
+        .left-section button {
+         color:rgb(78,78,78);
+         background-color:wight;
+         border:none;
+         padding:12px 50px;
+         border-radius:6px;
+         margin-top:15px;
+         cursor:pointer;
+        }
+        .right-section{
+         width:400px;
+         background-color:#fff;
+         border-radius:15px;
+         padding:40px 0;
+         box-shadow:0 5px 6px rgba(0,0,0,0.219);
+        }
+        .right-section h4{
+         font-size:20px;
+         width:300px;
+         margin:auto;
+         margin-bottom:30px;
+         color:rgb(136,136,136);
+        }
+        .input-group {
+         width:300px;
+         margin:30px auto;
+         display:flex;
+         flex-direction:column;
+         position:relative;
+        }
+        .input-group label {
+         color:rgb(165,165,165);
+         font-size:14px;
+         position:absolute;
+         top:10px;
+         transition:0.5s ease-in-out;
+        }
+        .input-group input {
+         border:none;
+         padding:7px;
+         margin-top:5px;
+         outline:none;
+         border-bottom:1px solid #c9c9c98a;
+        }
+        .input-group input:focus ~ label,
+         .input-group input:valid  ~ label  {
+         color:green;
+         top:-10px;
+         font-size:12px;
+        }
+        .input-group input:focus,
+        .input-group input:valid {
+         border-color:#ADD8E6;
+        }
+        .submit-section {
+         text-align:center;
+        }
+        .submit-button {
+         background:linear-gradient(rgba(6,72,105,0.849),rgb(3,96,133));
+         color:white;
+         border:none;
+         padding:10px 0;
+         margin-top:15px;
+         border-radius:5px;
+         width:300px;
+         cursor:pointer;
+        }
+        .submit-button hover{
+         box-shadow:0 3px 6px silver;
+        }
+        .section-two {
+         display:flex;
+         justify-content:space-evenly;
+         height:100vh;
+         align-items:center;
+        }
+        .card-container h1{
+         color:rgb(136,136,136);
+        }
+        .card-container {
+         width:350px;
+         border-radius:15px;
+         box-shadow:10px 5px 26px rgb(61,61,61);
+         overflow:hidden;
+         text-align:center;
+        }
+        .image-container {
+         width:100%;
+         height:450px;
+         overflow:hidden;
+        }
+        .image-container img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        transition:0.5s ease-in-out;
+        }
+        .image-container img:hover {
+         transform:scale(1.1) rotate(-5deg);
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <a href="#">Home</a>
+            <nav>
+              <a href="#" >Home</a>
+              <a href="#" >Exam risult</a>
+              <a href="#" >contact</a>
+            </nav>
+            </div>
+        </header>
+        <main>
+            <section class="banner-container">
+            <div class="container">
+            <div class="left-section">
+                <h1><span>M</span>set</h1>
+                <p>Majmau skill enhaincemet training</p>
+                <button>exam risult</button>
+            </div>
+            <div class="right-section">
+                <h4>Exam risult pannel</h4>
+                <form action="" >
+                <div class="input-group">
+                    <input type="text" id="name" required="required"  >
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="number" required="required" >
+                    <label for="number">Registration number</label>
+                </div>
+                <div class="submit-section">
+                   <input type="submit" class="submit-button" /> 
+                </div>
+               </form>
+              </div>
+            </div>
+          </section>
+          <section class="section-two" >
+              <div class="card-container" >
+                  <div class="image-container" >
+                      <img src="2.jpg" alt="" width="" >
+                  </div>
+                  <h1>Chooise Talent Student</h1>
+              </div>
+              <div class="card-container" >
+                  <div class="image-container" >
+                      <img src="2.jpg" alt="" width="" >
+                  </div>
+                  <h1>Chooise Talent Student</h1>
+              </div>
+          </section>
+       </main>
+    </body>
+</html>
